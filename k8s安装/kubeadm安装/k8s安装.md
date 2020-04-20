@@ -17,7 +17,7 @@ setenforce 0
 
 ### 第一步关闭swap分区
 
-`swapoff /mnt/swap`
+`swapoff -a`
 
 ### 第二步修改配置文件 - /etc/fstab
 
