@@ -172,3 +172,14 @@ docker run -d --restart=unless-stopped \
 -e AUDIT_LEVEL=3 \
 rancher/rancher:stable
 ```
+
+# 新版rancher安装
+
+```
+docker run -d --privileged --restart=unless-stopped \
+-p 8080:80 -p 8443:443 \
+-v  /var/lib/rancher:/var/lib/rancher/ \
+-v /root/var/log/auditlog:/var/log/auditlog \
+-e AUDIT_LEVEL=3 \
+rancher/rancher:stable
+```
